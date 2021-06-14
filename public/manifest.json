@@ -4,7 +4,9 @@
   "manifest_version": 2,
   "description": "create-react-app for extensions",
   "icons": {
-    "128": "logo192.png"
+    "32": "logo-32x32.png",
+    "64": "logo-64x64.png",
+    "128": "logo-128x128.png"
   },
   "permissions": [],
   "background": {
@@ -14,7 +16,7 @@
     "persistent": true
   },
   "browser_action": {
-    "default_icon": "logo192.png",
+    "default_icon": "logo-128x128.png",
     "default_popup": "popup.html"
   },
     "options_page": "index.html"

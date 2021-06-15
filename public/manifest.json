@@ -1,23 +1,16 @@
 {
-  "name": "Create React App Sample",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "create-react-app for extensions",
+  "short_name": "d-day",
+  "name": "d-day",
   "icons": {
-    "32": "logo-32x32.png",
-    "64": "logo-64x64.png",
-    "128": "logo-128x128.png"
+    "16": "favicon.ico",
+    "48": "logo192.png",
+    "128": "logo512.png"
   },
   "permissions": [],
-  "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": true
-  },
+  "manifest_version": 2,
+  "version": "0.0.1",
   "browser_action": {
-    "default_icon": "logo-128x128.png",
-    "default_popup": "popup.html"
-  },
-    "options_page": "index.html"
+    "default_popup": "index.html",
+    "default_title": "d-day"
   }
+}

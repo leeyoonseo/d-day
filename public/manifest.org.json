@@ -1,15 +1,16 @@
 {
+  "short_name": "d-day",
   "name": "d-day",
   "icons": {
-    "16": "icon-32x32.png",
-    "48": "icon-32x32.png",
+    "16": "favicon.ico",
+    "32": "icon-32x32.png",
     "64": "icon-64x64.png",
     "128": "icon-128x128.png"
   },
   "permissions": [],
-  "manifest_version": 3,
+  "manifest_version": 2,
   "version": "0.0.1",
-  "action": {
+  "browser_action": {
     "default_popup": "index.html",
     "default_title": "d-day"
   }

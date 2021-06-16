@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Layout from './Layout/index';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      App에 넣는다
+    </Layout>
   );
-}
+};
 
 export default App;
+
+// TODO
+// 1. 오늘 날짜가 default로 지정되어있다.
+// -- 달력 (양/음력) 
+// 2. 날짜 계산기
+// -- 기준일(input), 몇일째 되는날, - 몇일째 전날, 또 다른 기준일까지 몇일 남았는지, 몇일 지났는지
+// 3. 전역일 계산기
+// -- 입대날짜, 복무형태, 계산, 병무청 바로가기
+// 4. 만 나이계산
+// 5. 상대와 태어난 일수 계산 or 나이차이계산
+

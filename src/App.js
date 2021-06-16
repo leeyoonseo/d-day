@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
-import Layout from './Layout/index';
+import Header from './components/Header';
+import Container from './components/Container';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <Layout>
-      App에 넣는다
-    </Layout>
+    <div>
+      <Header />
+      <Container /> 
+      <Footer />
+    </div>
   );
 };
 
@@ -21,4 +25,3 @@ export default App;
 // -- 입대날짜, 복무형태, 계산, 병무청 바로가기
 // 4. 만 나이계산
 // 5. 상대와 태어난 일수 계산 or 나이차이계산
-

@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 
 const initialState = {
-  test: true,
+  test: 'a',
 };
 
 const store = createContext(initialState);
@@ -11,7 +11,7 @@ const StateProvider = ({ children }) => {
   const [state, dispatch] = useReducer((state, action) => {
     switch (action.type) {
       case 'action description':
-        console.log('??');
+        console.log('test', state.test);
         return 'a';
       // const newState = //해당 액션이 발생하면 새로운 상태를 만들겠다.
       // return newState;

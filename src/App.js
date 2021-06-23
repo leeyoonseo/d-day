@@ -1,19 +1,36 @@
-import React from 'react';
+import React, { useEffect, useCallback, useState } from 'react';
 import { StateProvider } from './store/store';
+import styled, { createGlobalStyle } from 'styled-components';
+import useToggle from './hooks/useToggle';
+import Header from './layout/Header';
+import Container from './layout/Container';
+import Footer from './layout/Footer';
 
-import Header from './components/Header/Header';
-import Container from './components/Container';
-import Footer from './components/Footer';
-import './App.css';
+const GlobalStyle = createGlobalStyle`
+`;
+
+const Wrap = styled.div`
+  height: 100vh;
+  background-color: pink;
+`;
 
 const App = () => {
+  const [isOnAnni, toggleOnAnni] = useToggle();
+  const [isOnSet, toggleOnSet] = useToggle();
+
   return (
     <StateProvider>
-      <div>
-        <Header />
-        <Container />
+      <GlobalStyle />
+      <Wrap className="app">
+        <Header toggleOnAnni={toggleOnAnni} toggleOnSet={toggleOnSet} />
+        <Container
+          isOnAnni={isOnAnni}
+          isOnSet={isOnSet}
+          toggleOnAnni={toggleOnAnni}
+          toggleOnSet={toggleOnSet}
+        />
         <Footer />
-      </div>
+      </Wrap>
     </StateProvider>
   );
 };

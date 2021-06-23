@@ -1,9 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const AnniversaryDay = () => {
+const Wrap = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: blue;
+`;
+
+const Anniversary = ({ toggleOnAnni }) => {
   return (
-    <div>
-      기념일 날짜 정보 모아보기
+    <Wrap>
+      <button onClick={toggleOnAnni}>닫기</button>
+      Anni!! 기념일 날짜 정보 모아보기
       {/* TODO:
         - 100일 단위
         - 1년 단위
@@ -18,8 +29,8 @@ const AnniversaryDay = () => {
             이때 제목, 날짜, 매년 반복할 것인지에 대한 정보 입력
         */}
       </button>
-    </div>
+    </Wrap>
   );
 };
 
-export default AnniversaryDay;
+export default Anniversary;

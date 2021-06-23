@@ -1,10 +1,8 @@
 import React from 'react';
-import Calendar from './Calendar/Calendar';
 
-const Container = () => {
+const Main = () => {
   return (
     <div>
-      {/* <Calendar /> */}
       <div>
         <span>우리 벌써</span>
         <span>578</span>
@@ -20,7 +18,4 @@ const Container = () => {
   );
 };
 
-export default Container;
-
-// TODO:
-// 문구 변경 가능
+export default Main;
